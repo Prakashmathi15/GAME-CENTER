@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="jpg" href="spz.jpg">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        .animated-text {
+			font-size: 60px;
+		
+			font-family:Arial, Helvetica, sans-serif;
+			animation: animateText 5s ease-in-out infinite alternate;
+      
+		}
+		
+		@keyframes animateText {
+      0%{color:red;}
+                 25%{color:orange;}
+                  50%{color:aqua;}
+                   75%{color:yellow;}
+                  100%{color:green;}
+			
+      
+		}
+    </style>
+</head>
+<body>
+    
+	<div class="animated-text", onclick="fun()" textalign="center"><H5 ALIGN="center">Rock Paper Scissors Game</H5><HR></div>
+	
+
+    <p>Choose your move:</p>
+    <button id="stone" >Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissor">Scissor</button>
+    <div id="result"></div>
+
+    <script>
+        function game(you, computer) {
+            if (you === computer) {
+                return -1; // Draw
+            }
+
+            if (you === 's' && computer === 'p') {
+                return 0; // You lose
+            } else if (you === 'p' && computer === 's') {
+                return 1; // You win
+            }
+
+            if (you === 's' && computer === 'z') {
+                return 1; // You win
+            } else if (you === 'z' && computer === 's') {
+                return 0; // You lose
+            }
+
+            if (you === 'p' && computer === 'z') {
+                return 0; // You lose
+            } else if (you === 'z' && computer === 'p') {
+                return 1; // You win
+            }
+        }
+
+        function playGame(choice) {
+            let you = choice;
+            let computer;
+            const n = Math.floor(Math.random() * 100);
+
+            if (n < 33) {
+                computer = 's';
+            } else if (n > 33 && n < 66) {
+                computer = 'p';
+            } else {
+                computer = 'z';
+            }
+
+            const result = game(you, computer);
+            let message;
+
+            if (result === -1) {
+                message = "🤷‍♂️Game Draw!";
+            } else if (result === 1) {
+                message = "🥳Wow! You have won the game!";
+            } else {
+                message = "🥲Oh! You have lost the game!";
+            }
+
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = `You choose: ${you},
+            Computer choose: ${computer}, 
+            Result: ${message}`;
+        }
+
+        document.getElementById('stone').addEventListener('click', () => {
+            playGame('s');
+        });
+
+        document.getElementById('paper').addEventListener('click', () => {
+            playGame('p');
+        });
+
+        document.getElementById('scissor').addEventListener('click', () => {
+            playGame('z');
+        });
+    </script>
+</body>
+</html>
