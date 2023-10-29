@@ -26,9 +26,9 @@ The project consists of the following files and directories:
 
 ## Usage
 
-To use this project, simply open the `main.html` file in your web browser. 
-1.You can click on the "Rock Paper Scissor" link to play the game.
-2.You can click on the "SNAKE GAME" link to play the game.
+To use this project, simply open the `main.html` file in your web browser.             
+1.You can click on the "Rock Paper Scissor" link to play the game.      
+2.You can click on the "SNAKE GAME" link to play the game.            
 
 ## Credits
 
