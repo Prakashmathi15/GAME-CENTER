@@ -21,7 +21,7 @@ The project consists of the following files and directories:
 - `Snake Game.html`:html file used for the "SNAKE GAME".    
      ----`style.css css` :file  is used for snakegame.     
      ----`script.js`: javascript file is used for snakegame
-  - `chess.html`:html file used for the "CHESS GAME". 
+- `chess.html`:html file used for the "CHESS GAME". 
 - `logo.jpg`: The favicon for the website.
 - `README.md`: This file, providing an overview of the project.
 
