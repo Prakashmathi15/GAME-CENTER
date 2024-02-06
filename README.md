@@ -17,7 +17,7 @@ GameCenter is a web-based platform designed to entertain users with a collection
 The project consists of the following files and directories:
 
 - `main.html`: The main HTML file containing the structure of the web page.
-- `spz.html`:Sub html file used for the Rock Paper Scissor game link.
+- `R P Z.html`:Sub html file used for the Rock Paper Scissor game link.
 - `Snake Game.html`:html file used for the "SNAKE GAME".    
      ----`style.css css` :file  is used for snakegame.     
      ----`script.js`: javascript file is used for snakegame
