@@ -11,6 +11,7 @@ GameCenter is a web-based platform designed to entertain users with a collection
 
 2. **Rock Paper Scissor (RPS) Game**: Users can play the Rock Paper Scissor game by clicking on the provided link. The game's title changes color when hovered over.
 3. **SNAKE GAME**:  Users can play the snakegame by clicking on the provided link. The game's title changes color when hovered over.
+4.  **CHESS GAME**:  Users can play the chessgame by clicking on the provided link. The game's title changes color when hovered over.
 ## Project Structure
 
 The project consists of the following files and directories:
@@ -19,7 +20,8 @@ The project consists of the following files and directories:
 - `spz.html`:Sub html file used for the Rock Paper Scissor game link.
 - `Snake Game.html`:html file used for the "SNAKE GAME".    
      ----`style.css css` :file  is used for snakegame.     
-     ----`script.js`: javascript file is used for snakegame    
+     ----`script.js`: javascript file is used for snakegame
+  - `chess.html`:html file used for the "CHESS GAME". 
 - `logo.jpg`: The favicon for the website.
 - `README.md`: This file, providing an overview of the project.
 
